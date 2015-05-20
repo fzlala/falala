@@ -44,13 +44,15 @@ p {
     }
 }
 
+/* href links that take you to a section on word click*/
 a {
-    color: #42dca3;
+    color: #2d53ff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
+/* Hovering on href word links changes color*/
 a:hover,
 a:focus {
     text-decoration: none;
@@ -175,11 +177,25 @@ a:focus {
     /* Size of the main heading on home page "Falala Innovation" */
     .intro .intro-body .brand-heading {
         line-height: 0;
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile screen */
+@media(max-width:480px) {
+    /* Size of the main heading on home page "Falala Innovation" */
+    .intro .intro-body .brand-heading {
+        line-height: 0;
+        font-size: 25px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 12px;
+        margin-bottom: -200px;
     }
 }
 
@@ -188,7 +204,6 @@ a:focus {
     width: 70px;
     height: 70px;
     margin-top: 500px;
-    margin-bottom: -150px;
     padding: 7px 16px;
     border: 2px solid #000;
     border-radius: 100%!important;
@@ -267,7 +282,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #000;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/downloads-bg.jpg) center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -311,17 +326,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #4b6fcd;
+    color: #334ab4;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #4b6fcd;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: #fff;
+    background-color: #4b6fcd;
 }
 
 ul.banner-social-buttons {
@@ -356,13 +371,13 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
+    background: #334ab4;
     background: rgba(255,255,255,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
+    background: #334ab4;
     background: rgba(255,255,255,.2);
 }
 
